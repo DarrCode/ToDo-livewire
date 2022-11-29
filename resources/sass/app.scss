@@ -1,0 +1,220 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.container-todo {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #27293d;
+  
+}
+
+.form-control {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px 0 30px;
+}
+
+.todo-card{
+  border-radius: 25px;
+  padding: 0 30px 0 30px;
+  font-size: 18px;
+}
+
+
+.btn-auth{
+  height:50px; 
+  width: 100%; 
+  font-size:16px;
+  background-color: #b3e59f!important;
+  border: none!important;
+}
+
+body {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  background: #1D1D2E;
+}
+
+.todos-card {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding: 25px 0;
+  text-align: center;
+  border-radius: 25px;
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 2rem rgba(0,0,0,.05);
+}
+
+.todos-card .card-body h2 {
+  font-size: 22px;
+}
+
+.todo-edit-card h2 {
+  padding: 20px 0 0 20px;
+  font-size: 22px;
+  color: #000;
+}
+
+p.card-separator {
+  border-bottom: 2px solid #b3e59f;
+  border-radius: 25px;
+}
+
+.todo-card {
+  margin-top: 50px;
+  padding: 25px 0;
+  text-align: center;
+  border-radius: 25px;
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 2rem rgba(0,0,0,.15);
+}
+
+.todo-edit-card {
+  margin-top: 25px;
+  padding: 10px 10px;
+  text-align: left;
+  border-radius: 25px;
+}
+
+.card-body h1 {
+  font-size: 36px;
+}
+
+div.todo-edit-card div.card-body {
+  padding: 0 20px 10px 20px;
+}
+
+ul.todo-list {
+  padding: 0;
+}
+  
+
+ul.todo-list li.todo {
+  cursor: pointer;
+  font-size: 18px;
+  list-style: none;
+  text-align: left;
+  padding: 10px;
+  margin-top: 7px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+ul.todo-list li.todo span.todo-completed-icon {
+  color: #b3e59f;
+}
+
+ul.todo-list li.todo span.todo-completed-date {
+  font-size: 14px;
+  color: #b3e59f;
+}
+
+ul.todo-list ul {
+  margin-top: 5px 0 10px 0;
+  padding: 0;
+  text-align: right;
+}
+
+ul.todo-list ul li.todo-buttons {
+  cursor: pointer;
+  text-align: center;
+  font-size: 13px;
+  list-style: none;
+  display: inline;
+  margin-right: 5px;
+  padding: 5px;
+  background: #b3e59f;
+  border-radius: 7px;
+  color: #fff;
+}
+ul.todo-list ul li.todo-buttons.btn-delete:hover{
+  color: #f22112;
+}
+
+form.edit-todo {
+  text-align: left;
+}
+
+form.create-todo input.form-text {
+  outline: none !important;
+  font-size: 18px;
+  height: 32px;
+  width: 100%;
+  margin-top: 6px;
+  margin-right: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background: white;
+  border: 1px solid transparent;
+}
+
+form.edit-todo div.form-group input.form-text {
+  outline: none !important;
+  font-size: 18px;
+  height: 50px;
+  width: 100%;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background: #1D1D2E;
+  border: 1px solid transparent;
+}
+
+form.create-todo button.btn-todo {
+  margin-top: 4px;
+  font-size: 18px;
+  color: white;
+  background: #b3e59f;
+
+}
+
+form.edit-todo button.btn-todo {
+  margin-top: 5px;
+  font-size: 18px;
+  padding: 0 10px;
+  color: white;
+  background: #b3e59f;
+}
+
+button.btn-todo:hover {
+  background: #FE675D;
+  box-shadow: 0 0.5rem 2rem rgba(0,0,0,.50);
+}
+
+@media (max-width: 1199.98px) {
+  .todos-card,
+  .todo-card {
+      margin-top: 25px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .todos-card {
+      margin-bottom: 0;
+  }
+}
