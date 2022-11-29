@@ -35,15 +35,15 @@
                     </div>
                     <div class="col-12">
                         <div class="form-group">
-                            <input type="password" placeholder="Confirmar contrasena" class="form-control">
+                            <input type="password" placeholder="Confirmar contrasena" required class="form-control">
                             @error('password') <span class="text-danger error">{{ $message }}</span>@enderror
                         </div>
                     </div>
                     <div class="col-md-12 text-center my-3">
                         <button class="btn btn-primary rounded-pill fw-bold btn-auth" wire:click.prevent="registerStore">REGISTRAR CUENTA</button>
                     </div>
-                    <div class="col-md-12 text-center">
-                        Ya tienes una cuenta? <a class="text-primary" wire:click.prevent="register"><strong>inicia sesion</strong></a>
+                    <div class="col-md-12 text-black text-center">
+                        Ya tienes una cuenta? <a class="text-primary" style="cursor: pointer" wire:click.prevent="register"><strong>inicia sesion</strong></a>
                     </div>
                 </div>
             </form>
@@ -65,8 +65,8 @@
                     <div class="text-center">
                         <button class="btn btn-primary rounded-pill fw-bold btn-auth" wire:click.prevent="login">INICIA SESION</button>
                     </div>
-                    <div class="col-md-12 my-4 text-center">
-                        No tienes una cuenta? <a class="text-primary" wire:click.prevent="register"><strong>Registrate aqui</strong></a>
+                    <div class="col-md-12 my-4 text-black text-center">
+                        No tienes una cuenta? <a class="text-primary" style="cursor: pointer" wire:click.prevent="register"><strong>Registrate aqui</strong></a>
                     </div>
                 </div>
             </form>

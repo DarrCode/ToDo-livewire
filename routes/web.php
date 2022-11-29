@@ -22,8 +22,6 @@ Route::view('login', 'livewire.auth.auth');
 
 Route::middleware('auth')->group(function() {
 
-  //Route::get('/home', [App\Http\Livewire\Home\IndexTodo::class, 'render'])->name('home');
-  Route::get('/home', CreateTodo::class);
-
+  Route::get('home', CreateTodo::class)->name('home');
 
 });

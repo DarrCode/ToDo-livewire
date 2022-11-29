@@ -11,9 +11,10 @@
             @foreach($todos as $key => $todo)
                 <div x-data="{ open: false }">
                     <li @click="open = true" class="todo shadow-sm">
-                        <span class="todo-completed-icon"><i class="fas fa-check"></i></span>{{ $todo->description }}
-                        <span class="todo-completed-date">({{$todo->completed_at}})</span>
+                        <span class="todo-completed-icon"><i class="fas fa-check"></i></span> {{ $todo->description }}
                         <img src="{{ Storage::url($todo->image) }}" width="100" alt="">
+                        <span class="todo-completed-date">({{$todo->completed_at}})</span>
+
                     </li>
 
                     <ul x-show.transition.in.duration.150ms="open" @click.away="open = false" x-cloak>
